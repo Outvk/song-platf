@@ -7,9 +7,9 @@ import {
   Link,
   Container,
   useColorMode,
+  Image
 } from '@chakra-ui/react'
 import { FiGithub, FiUser, FiSun, FiMoon } from 'react-icons/fi'
-import { GiMusicalNotes } from 'react-icons/gi'
 
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode()
@@ -18,21 +18,32 @@ const Navbar = () => {
   return (
     <Box
       position="fixed"
-      w="100%"
+      top="0"
+      left="0"
+      right="0"
+      height="64px"
       zIndex={1000}
-      bg={isDark ? 'gray.800' : 'white'}
-      boxShadow="sm"
+      bg={isDark ? 'rgba(0, 0, 0, 0.44)' : 'rgba(255, 255, 255, 0.39)'}
+      backdropFilter="blur(5px)"
       borderBottom="1px"
-      borderColor={isDark ? 'gray.700' : 'gray.200'}
+      borderColor={isDark ? 'whiteAlpha.200' : 'blackAlpha.200'}
+      transition="all 0.3s ease-in-out"
+      color={isDark ? 'white' : 'gray.900'}
     >
-      <Container maxW="container.xl">
-        <Flex h={16} alignItems="center" justifyContent="space-between">
+      <Container maxW="container.xl" height="100%">
+        <Flex height="100%" alignItems="center" justifyContent="space-between">
           {/* Logo */}
           <HStack spacing={8} alignItems="center">
             <Box as="a" href="/" display="flex" alignItems="center">
-              <GiMusicalNotes size="24px" color={isDark ? 'white' : 'black'} />
-              <Text ml={2} fontSize="xl" fontWeight="bold">
-                MusicHub
+              <Image 
+                src="/images/m.gif" 
+                alt="Music Logo"
+                boxSize="50px"
+                objectFit="contain"
+                mr={2}
+              />
+              <Text ml={2} fontSize="xl" fontWeight="bold" color="white">
+                OutVibs
               </Text>
             </Box>
           </HStack>
@@ -44,9 +55,9 @@ const Navbar = () => {
             display={{ base: 'none', md: 'flex' }}
             alignItems="center"
           >
-            <Link href="/new" fontWeight="medium">New</Link>
-            <Link href="/playlist" fontWeight="medium">Playlist</Link>
-            <Link href="/artists" fontWeight="medium">Artists</Link>
+            <Link href="/new" fontWeight="medium" _hover={{ color: isDark ? 'purple.300' : 'purple.600' }}>New</Link>
+            <Link href="/playlist" fontWeight="medium" _hover={{ color: isDark ? 'purple.300' : 'purple.600' }}>Playlist</Link>
+            <Link href="/artists" fontWeight="medium" _hover={{ color: isDark ? 'purple.300' : 'purple.600' }}>Artists</Link>
           </HStack>
 
           {/* Right Side Icons */}
@@ -57,6 +68,8 @@ const Navbar = () => {
               aria-label="Toggle theme"
               icon={isDark ? <FiSun /> : <FiMoon />}
               onClick={toggleColorMode}
+              color={isDark ? 'white' : 'gray.900'}
+              _hover={{ bg: isDark ? 'whiteAlpha.200' : 'blackAlpha.100' }}
             />
             <IconButton
               size="md"
@@ -66,12 +79,16 @@ const Navbar = () => {
               as="a"
               href="https://github.com"
               target="_blank"
+              color={isDark ? 'white' : 'gray.900'}
+              _hover={{ bg: isDark ? 'whiteAlpha.200' : 'blackAlpha.100' }}
             />
             <IconButton
               size="md"
               variant="ghost"
               aria-label="Profile"
               icon={<FiUser />}
+              color={isDark ? 'white' : 'gray.900'}
+              _hover={{ bg: isDark ? 'whiteAlpha.200' : 'blackAlpha.100' }}
             />
           </HStack>
         </Flex>
