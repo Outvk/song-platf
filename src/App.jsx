@@ -57,6 +57,8 @@ import {
   FaLink,
 } from "react-icons/fa";
 import { useState } from "react";
+import ArtistCarousel from "../ArtistCarousel";
+import Footer from "../Footer";
 
 // Add the animated heading component
 const AnimatedGradientHeading = styled(Heading)`
@@ -451,6 +453,9 @@ function App() {
             </Flex>
           </Container>
         </Box>
+
+        {/* Artist Carousel Section */}
+        <ArtistCarousel />
 
         {/* Features Drawer */}
         <ChakraDrawer
@@ -1498,6 +1503,8 @@ function App() {
         {/* Add padding only in dark mode */}
         {isDark && <Box pb="80px" />}
       </Box>
+      {/* Place Footer at the end of your main Box */}
+      <Footer />
     </Box>
   );
 }
