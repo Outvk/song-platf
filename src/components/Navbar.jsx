@@ -43,7 +43,7 @@ const Navbar = () => {
                 mr={2}
               />
               <Text ml={2} fontSize="xl" fontWeight="bold" color="white">
-                OutVibs
+                
               </Text>
             </Box>
           </HStack>

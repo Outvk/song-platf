@@ -1,0 +1,30 @@
+/* ...existing code... */
+
+/* Ensure body is scrollable for demo */
+body {
+  /* ...existing code... */
+  min-height: 100vh;
+  overflow-y: scroll;
+}
+
+/* Custom purple scrollbar for Webkit browsers */
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: purple;
+  border-radius: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Firefox scrollbar */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: purple #f1f1f1;
+}
+
+/* ...existing code... */
