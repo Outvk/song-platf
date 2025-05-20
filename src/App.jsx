@@ -57,7 +57,7 @@ import {
   FaLink,
 } from "react-icons/fa";
 import { useState } from "react";
-import ArtistCarousel from "../ArtistCarousel";
+import ArtistCarousel from "./components/ArtistCarousel";
 import ArtistCarousel2 from "./components/ArtistCarousel2";
 import Footer from "../Footer";
 

@@ -611,13 +611,14 @@ export default function ArtistCarousel() {
       </Text>
       <Box overflow="hidden" position="relative">
         <ArtistRow speed="30" badgeColor="purple" onFollow={handleFollow} />
+       {/* 
         <ArtistRow
           reverse
           speed="35"
           badgeColor="pink"
           onFollow={handleFollow}
         />
-        <ArtistRow speed="25" badgeColor="yellow" onFollow={handleFollow} />
+        <ArtistRow speed="25" badgeColor="yellow" onFollow={handleFollow} /> */}
       </Box>
       {modalArtist && (
         <ArtistModal
