@@ -31,7 +31,7 @@ const trendingSongs = [
     title: "Midnight Dreams",
     artist: "Luna Eclipse",
     duration: "3:45",
-    avatar: "https://picsum.photos/id/64/200/200",
+    avatar: "/images/hero-avatar.gif",
     audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
     likes: "2.3M",
     trending: "+45%"
@@ -41,7 +41,7 @@ const trendingSongs = [
     title: "Electric Sunset",
     artist: "Neon Pulse",
     duration: "4:20",
-    avatar: "https://picsum.photos/id/65/200/200",
+    avatar: "/images/hero-avatar.gif",
     audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
     likes: "1.8M",
     trending: "+38%"
@@ -51,7 +51,7 @@ const trendingSongs = [
     title: "Urban Rhythm",
     artist: "City Beats",
     duration: "3:55",
-    avatar: "https://picsum.photos/id/68/200/200",
+    avatar: "/images/hero-avatar.gif",
     audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
     likes: "1.5M",
     trending: "+32%"
@@ -64,7 +64,7 @@ const popularSongs = [
     title: "Ocean Waves",
     artist: "Coastal Vibes",
     duration: "4:10",
-    avatar: "https://picsum.photos/id/76/200/200",
+    avatar: "/images/hero-avatar.gif",
     audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
     likes: "3.1M",
     trending: "+28%"
@@ -74,7 +74,7 @@ const popularSongs = [
     title: "Mountain Echo",
     artist: "Nature Sound",
     duration: "3:50",
-    avatar: "https://picsum.photos/id/77/200/200",
+    avatar: "/images/hero-avatar.gif",
     audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3",
     likes: "2.7M",
     trending: "+25%"
@@ -84,7 +84,7 @@ const popularSongs = [
     title: "City Lights",
     artist: "Urban Dreams",
     duration: "4:05",
-    avatar: "https://picsum.photos/id/78/200/200",
+    avatar: "/images/hero-avatar.gif",
     audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3",
     likes: "2.4M",
     trending: "+22%"

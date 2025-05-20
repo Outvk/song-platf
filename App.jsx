@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./styles.css";
+import ArtistCarousel from "../ArtistCarousel";
+import Footer from "../Footer";
+import AudioVisualizer from "./components/AudioVisualizer";
 
 function App() {
   const [albums] = useState([
@@ -52,6 +55,13 @@ function App() {
           </svg>
         </button>
       </div>
+      {/* Artist Carousel Section */}
+      <ArtistCarousel />
+
+      {/* Audio Visualizer Section */}
+      <AudioVisualizer />
+
+      {/* Features Drawer */}
       {/* Render filtered albums/songs */}
       <div>
         {filteredAlbums.map((item, idx) => (

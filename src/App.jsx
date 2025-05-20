@@ -58,6 +58,7 @@ import {
 } from "react-icons/fa";
 import { useState } from "react";
 import ArtistCarousel from "../ArtistCarousel";
+import ArtistCarousel2 from "./components/ArtistCarousel2";
 import Footer from "../Footer";
 
 // Add the animated heading component
@@ -456,6 +457,9 @@ function App() {
 
         {/* Artist Carousel Section */}
         <ArtistCarousel />
+
+        {/* Second Artist Carousel Section */}
+        <ArtistCarousel2 />
 
         {/* Features Drawer */}
         <ChakraDrawer
